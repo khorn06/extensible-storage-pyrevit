@@ -24,7 +24,7 @@ test_data = {
     "element_id": DB.ElementId(123456),
     "xyz": DB.XYZ(1.0, 2.0, 3.0),
     "uv": DB.UV(4.0, 5.0),
-    "entity": Entity(DB.ExtensibleStorage.Entity(EntitySchema.schema)),
+    "entity": EntitySchema.entity,
 }
 
 document = revit.doc
