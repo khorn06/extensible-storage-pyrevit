@@ -45,6 +45,11 @@ class SchemaMeta(type):
         return cls._schema
 
     @property
+    def entity(cls):
+        """Creates a new entity corresponding to the schema"""
+        return ES.Entity(cls.schema)
+
+    @property
     def documentation(cls):
         """The overall description of the schema"""
         return cls.schema.Documentation
